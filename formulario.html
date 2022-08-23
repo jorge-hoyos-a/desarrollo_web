@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+        <link rel="icon" href="aa_georgie.jpg" type="image/jpg">
+    </head>
+    <body>
+        <h2>Ejemplo de Formulario</h2>
+        <form action="" method="">
+            <label for="nombre completo">Nombre Completo</label>
+            <input type="text" name="nombreComp" id="nombreComp" placeholder="Nombre completo">
+            <br>
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password" placeholder="Contraseña"> 
+            <br>
+            <input type="submit" value="Aceptar">
+            <input type="reset" value="Cancelar">
+            <br><br>
+            <label for="comentarios">Comentarios</label> <br>
+            <textarea name="comentarios" id="comentarios" cols="60" rows="20" placeholder="Comentarios"></textarea>
+            <br>
+            <input type="radio" name="Masculino" id="Masculino">
+            <label>Masculino</label>
+            <br>
+            <input type="radio" name="Femenino" id="Femenino">
+            <label for="Femenino">Femenino</label>
+            <br><br>
+            <label>Seleccione los lenguajes que domina</label> <br>
+            <input type="checkbox" name="python" id="python">Python <br>
+            <input type="checkbox" name="c++" id="c++">C++ <br>
+            <input type="checkbox" name="java" id="java">Java <br>
+            <br><br>
+            Seleccione una ciudad <br>
+            <select name="ciudad" id="ciudad"> <!--Menú desplegable-->
+                <option value="1">Cartagena</option>
+                <option value="2">Bogotá</option>
+                <option value="3">Cali</option>
+                <option value="4">Medellín</option>
+                <option value="5">Montería</option>
+                <option value="6">Bugalabig</option>
+            </select>
+            <br><br>
+            <fieldset>      <!--Agrupar dentro de un cuadro-->
+                <legend>Ciudad</legend>
+                Seleccione una o varias ciudades (Presione ctrl para seleccionar varios) <br>
+                <select name="ciudad[]" id="ciudad" size="3" multiple> <!--Menú desplegable que permite seleccionar varias opciones, size es cuantas opciones muestra a la vez-->
+                    <option value="1">Cartagena</option>
+                    <option value="2">Bogotá</option>
+                    <option value="3">Cali</option>
+                    <option value="4">Medellín</option>
+                    <option value="5">Montería</option>
+                    <option value="6">Bugalabig</option>
+                </select>
+            </fieldset>
+            
+            <br><br>
+            <fieldset>
+                <legend>Fruver</legend>
+                Selecciona una fruta o verdura <br>
+                <select name="fruver" id="fruver">
+                    <optgroup label="Frutas">
+                        <option value="1">Manzana</option>
+                        <option value="2">Pera</option>
+                        <option value="3">Curuba</option>
+                    </optgroup>
+                    <optgroup label="Verduras">
+                        <option value="4">Cebolla</option>
+                        <option value="5">Ají</option>
+                        <option value="6">Espinaca</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+</html>
