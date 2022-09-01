@@ -1,3 +1,4 @@
+//Los eventos se ubican en las etiquetas de los elementos html (forma en desuso)
 const user = "georgieH"
 const pw = 1234
 function verificar(){
